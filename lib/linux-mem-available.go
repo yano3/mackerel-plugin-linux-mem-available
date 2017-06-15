@@ -49,7 +49,7 @@ func (p MemAvailablePlugin) FetchMetrics() (map[string]interface{}, error) {
 func (p MemAvailablePlugin) GraphDefinition() map[string]mp.Graphs {
 	var graphdef = map[string]mp.Graphs{
 		"linux-mem-available.memory": {
-			Label: "Memory",
+			Label: "Linux Available Memory",
 			Unit:  "bytes",
 			Metrics: []mp.Metrics{
 				{Name: "total", Label: "Total Memory", Diff: false, Type: "uint64", Stacked: false},
